@@ -95,7 +95,7 @@ print('Joseph' in enjoys_travelling)
 ```
 
 ## Try it Yourself
-using [this](python_files\set_tiy.py) Python script, write code to find and display the information requested in each of the cases.
+Using [this](python_files\set_tiy.py) Python script, write code to find and display the information requested in each of the cases.
 
 
 You may find the example code [here](python_files\set_ex.py).

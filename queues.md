@@ -132,7 +132,7 @@ else:
 
 ## Try it Yourself
 
-using [this](python_files\queue_tiy.py) Python script, try finishing the Queue class and implementing it to satisfy the test cases.
+Using [this](python_files\queue_tiy.py) Python script, try finishing the Queue class and implementing it to satisfy the test cases.
 
 
 You may find the example code [here](python_files\queue_ex.py).
