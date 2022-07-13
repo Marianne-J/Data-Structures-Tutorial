@@ -74,7 +74,7 @@ Eric
 Sue
 ```
 
-As you can see, Mary is currently at the end of the line. If we wanted to see how long the line currently is, we would use the len() function.
+As you can see, Mary is currently at the front of the line. If we wanted to see how long the line currently is, we would use the len() function.
 
 ```python
 # Display the size (length) of the queue

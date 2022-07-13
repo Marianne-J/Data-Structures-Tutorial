@@ -10,6 +10,9 @@ print('-----------------------\n')
 
 # Add your code here
 
+# The results should be (the order does not matter):
+# Caleb, Olivia, Lilly
+
 print('\n-----------------------\n')
 
 
@@ -19,6 +22,9 @@ print('\nCase 2')
 print('-----------------------\n')
 
 # Add your code here
+
+# The results should be (the order does not matter):
+# Lilly, Olivia, Daisy, Gabrielle
 
 print('\n-----------------------\n')
 
@@ -30,6 +36,12 @@ print('-----------------------\n')
 
 # Add your code here
 
+# The results should be (the order does not matter):
+# Lucas, Elizabeth, Olivia, Henry, Bethany, Caleb, Patrick,
+# Lilly, Richard, Kylie, Tim, Jason, Maria, Erica, Gabrielle,
+# Carson, Abby, Barbara, Jeremy, Daisy, David, Gabriel,
+# Jacob, Hailey, Emily, Oliver
+
 print('\n-----------------------\n')
 
 
@@ -39,6 +51,9 @@ print('\nCase 4')
 print('-----------------------\n')
 
 # Add your code here
+
+# The results should be (the order does not matter):
+# Lilly, Olivia
 
 print('\n-----------------------\n')
 
@@ -50,6 +65,9 @@ print('-----------------------\n')
 
 # Add your code here
 
+# The result should be:
+# False
+
 print('\n-----------------------\n')
 
 
@@ -59,6 +77,9 @@ print('\nCase 6')
 print('-----------------------\n')
 
 # Add your code here
+
+# The result should be:
+# True
 
 print('\n-----------------------\n')
 
@@ -70,6 +91,9 @@ print('-----------------------\n')
 
 # Add your code here
 
+# The result should be:
+# True
+
 print('\n-----------------------\n')
 
 
@@ -79,5 +103,8 @@ print('\nCase 8')
 print('-----------------------\n')
 
 # Add your code here
+
+# The result should be:
+# True
 
 print('\n-----------------------\n')

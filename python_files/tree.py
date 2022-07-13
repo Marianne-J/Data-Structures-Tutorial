@@ -89,6 +89,10 @@ class BST():
         '''Returns the size of the BST.'''
         # TODO complete the function
 
+    def _size(self, height = None):
+        '''The recursive size function.'''
+        # TODO complete the function
+
     def __iter__(self):
         '''Traverse through the tree forwards.'''
         # Start at the root
@@ -101,21 +105,15 @@ class BST():
             yield from self._traverse_forward(node._left)
             yield node._value
             yield from self._traverse_forward(node._right)
-        
-    def __reversed__(self):
-        '''Traverse through the tree in reverse.'''
-        # TODO complete the function
-        pass
 
-    def _traverse_backward(self, node):
-        '''Recursively traverses backwards through the tree and returns the nodes.'''
-        # TODO copmlete the function
-        pass
 
 def main():
     bst = BST()
     
     # Example - Insert
+    print('\nExample - Insert')
+    print('-----------------------\n')
+
     bst.insert(6)
     bst.insert(8)
     bst.insert(10)
@@ -123,6 +121,11 @@ def main():
     bst.insert(3)
     bst.insert(5)
     bst.insert(1)
+
+    for node in bst:
+        print(node)
+
+    print('\n-----------------------\n')
 
 
     # Example - Height
@@ -132,16 +135,6 @@ def main():
     print(bst.height(10))
     print(bst.height(3))
     print(bst.height(6))
-    
-    print('\n-----------------------\n')
-
-
-    # Example - Traverse forward
-    print('\nExample - Traverse forward')
-    print('-----------------------\n')
-
-    for node in bst:
-        print(node)
     
     print('\n-----------------------\n')
 
@@ -171,20 +164,8 @@ def main():
     print('\n-----------------------\n')
 
 
-    # Test case 3 - Traverse backward
+    # Test case 3 - Empty
     print('\nTest Case 3')
-    print('-----------------------\n')
-
-    # When displayed, the tree should be in the reverse order of the
-    # traverse forward test
-    for node in reversed(bst):
-        print(node)
-    
-    print('\n-----------------------\n')
-
-
-    # Test case 4 - Empty
-    print('\nTest Case 4')
     print('-----------------------\n')
 
     bst2 = BST()

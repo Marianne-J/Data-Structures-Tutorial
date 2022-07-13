@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A tree is a data structure with nodes that are connected by pointers. It is similar to a linked list, but a single node on a tree can be connected to more than one node as opposed to just one. There are a variety of different kinds of trees. This tutorial will cover a binary search tree (BST) and a balanced binary search tree (balanced BST), two commonly used trees.
+A tree is a data structure with nodes that are connected by pointers. It is similar to a linked list, but a single node on a tree can be connected to more than one node as opposed to just one. There are a variety of different kinds of trees. This tutorial will primarily cover a binary search tree (BST), a commonly used tree.
 
 ## Characteristics
 
@@ -27,7 +27,7 @@ Trees can be used in data compression, which allows for large amounts of data to
 
 ## Recursion
 
-Recursion can be an integral part of a tree. Recursion is a programming technique where a function calls itself. A function that uses recursion is known as a recursive function. A recursive function must follow to rules: a recursive call must be performed on a smaller problem, and there must be a base case. If the problem does not get smaller each time a recursive function is called, then the program will run until a RecursionError exception is raised.
+Recursion is an integral part of a tree. Recursion is a programming technique where a function calls itself. A function that uses recursion is known as a recursive function. A recursive function must follow two rules: a recursive call must be performed on a smaller problem, and there must be a base case. If the problem does not get smaller each time a recursive function is called, then the program will run until a RecursionError exception is raised.
 
 When a function is called, it is put in a stack. This stack is used to keep track of the functions that have been called. Once that stack fills up, an exception is raised and the program crashes.
 
@@ -62,7 +62,7 @@ In trees, recursion is typically used to navigate through the tree.
 
 ## Example
 
-Let's try creating a BST class in Python. I will only be completing part of it for this example; the rest you will complete in the "try it yourself" activity. I opted to exclude the remove function for both this example and the practice code as that is a bit more complicated.
+Let's try creating a BST class in Python. Only part of it will be completed for this example; the rest you will complete in the "try it yourself" activity. The remove function will be excluded for both this example and the practice code as that is a bit more complicated.
 
 ```python
 class BST():
@@ -121,7 +121,7 @@ The _insert function is where most of the work will actually be done. The first 
                 return
 ```
 
-If the root is not empty, then the function needs to compare the value to the value of the root. If the value is greater than the root, it should move to the left. If it is less than the root, it should move to the right.
+If the root is not empty, then the function needs to compare the value to the value of the root. If the value is greater than the root, it should move to the right. If it is less than the root, it should move to the left.
 
 ```python
     def _insert(self, curr_node, value):
@@ -139,7 +139,7 @@ If the root is not empty, then the function needs to compare the value to the va
                 pass
 ```
 
-Once the function knows which direction to move, it should check whether the next node is empty. If it is, then it should insert the value there. This is the base case. If the node is not empty, then it should make a recursive call and keep searching. Not that the recursive call uses the next node instead of the current node.
+Once the function knows which direction to move, it should check whether the next node is empty. If it is, then it should insert the value there. This is the base case. If the node is not empty, then it should make a recursive call and keep searching. Note that the recursive call uses the next node instead of the current node.
 
 ```python
     def _insert(self, curr_node, value):
@@ -175,6 +175,9 @@ We can then use this function to insert values into a bst.
 
 ```python
     # Example - Insert
+    print('\nExample - Insert')
+    print('-----------------------\n')
+
     bst.insert(6)
     bst.insert(8)
     bst.insert(10)
@@ -182,6 +185,26 @@ We can then use this function to insert values into a bst.
     bst.insert(3)
     bst.insert(5)
     bst.insert(1)
+
+    for node in bst:
+        print(node)
+
+    print('\n-----------------------\n')
+```
+Output:
+```
+Example - Insert
+-----------------------
+
+1
+3
+5
+6
+7
+8
+10
+
+-----------------------
 ```
 
 ### Height
@@ -255,7 +278,7 @@ We can then use this function to find the height of nodes we have inserted into 
     
     print('\n-----------------------\n')
 ```
-
+Output:
 ```
 Example - Height
 -----------------------
@@ -263,69 +286,6 @@ Example - Height
 2
 1
 0
-
------------------------
-```
-
-### Traverse Forward
-
-In order to iterate through the BST, we need to add an \_\_iter\_\_ function, as well as a function to make recursive calls.
-
-```python
-    def __iter__(self):
-        '''Traverse through the tree forwards.'''
-        pass
-
-    def _traverse_forward(self, node):
-        '''Recursively traverses forwards through the tree and returns the nodes.'''
-        pass
-```
-
-The \_\_iter\_\_ function will make the first call to the \_traverse\_forward function.
-
-```python
-    def __iter__(self):
-        '''Traverse through the tree forwards.'''
-        # Start at the root
-        yield from self._traverse_forward(self._root)
-```
-
-The \_traverse\_forward function will then use recursive calls to move through the tree and return the node values until it reaches the empty nodes at the end of the tree.
-
-```python
-    def _traverse_forward(self, node):
-        '''Recursively traverses forwards through the tree and returns the nodes.'''
-        # Make sure the node is not empty
-        if node is not None:
-            yield from self._traverse_forward(node._left)
-            yield node._value
-            yield from self._traverse_forward(node._right)
-```
-
-We can then iterate through the BST using a for loop.
-
-```python
-    # Example - Traverse forward
-    print('\nExample - Traverse forward')
-    print('-----------------------\n')
-
-    for node in bst:
-        print(node)
-    
-    print('\n-----------------------\n')
-```
-
-```
-Example - Traverse forward
------------------------
-
-1
-3
-5
-6
-7
-8
-10
 
 -----------------------
 ```
