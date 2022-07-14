@@ -23,19 +23,19 @@ A good example of a queue in real life are lines for a cash register, ticket boo
 
 The next person to arrive stands behind the first person, the next person stands behind that person, and so on. 
 
-![Second person arrives](images\ex_img2.png)
-![Third person arrives](images\ex_img3.png)
-![Filled line](images\ex_img4.png)
+![Second person arrives](images/ex_img2.png)
+![Third person arrives](images/ex_img3.png)
+![Filled line](images/ex_img4.png)
 
 The first person in line will be served first.
 
-![First person served](images\ex_img5.png)
-![First person leaves](images\ex_img6.png)
+![First person served](images/ex_img5.png)
+![First person leaves](images/ex_img6.png)
 
 Once they have been served, the next person will be served. This pattern will continue until the line is empty (or the service is closed.)
 
-![Next person served](images\ex_img7.png)
-![Next person leaves](images\ex_img8.png)
+![Next person served](images/ex_img7.png)
+![Next person leaves](images/ex_img8.png)
 
 ## Python Lists
 
@@ -132,7 +132,7 @@ else:
 
 ## Try it Yourself
 
-Using [this](python_files\queue_tiy.py) Python script, try finishing the Queue class and implementing it to satisfy the test cases.
+Using [this](python_files/queue_tiy.py) Python script, try finishing the Queue class and implementing it to satisfy the test cases.
 
 
-You may find the example code [here](python_files\queue_ex.py).
+You may find the example code [here](python_files/queue_ex.py).
