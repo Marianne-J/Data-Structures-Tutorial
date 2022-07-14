@@ -8,7 +8,7 @@ A tree is a data structure with nodes that are connected by pointers. It is simi
 
 A binary search tree has a root that is connected to at most two nodes. Each additional node is connected to at most three nodes (its parent node and two child nodes). The nodes of the tree that are only connected to a parent node are called leaves. The root can be any data value. Every additional value that is added is compared with the already existing nodes. If the value is greater than the root, then it is moved right. Otherwise, it is moved left. The value is then compared to the node it was moved to (if it exists) in the same fashion. The value is moved through the tree until an empty node is found. A balanced BST has about the same depth on both sides of the tree (as depicted below).
 
-![Balanced BST](images\ex_img9.png)
+![Balanced BST](\images\ex_img9.png)
 
 Here are some common BST methods.
 
