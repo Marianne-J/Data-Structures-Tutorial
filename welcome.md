@@ -11,4 +11,5 @@ Welcome! These tutorials cover three different data structures. They are meant t
 ## Contact Information
 
 Marianne Johnson - BYU Idaho Student
+
 joh20041@byui.edu
