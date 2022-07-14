@@ -19,7 +19,7 @@ Operation | Description | Parameters | Returns
 
 A good example of a queue in real life are lines for a cash register, ticket booth, ride, etc. The first person to arrive stands at the front of the line.
 
-![First person arrives](images\ex_img1.png)
+![First person arrives](images/ex_img1.png)
 
 The next person to arrive stands behind the first person, the next person stands behind that person, and so on. 
 
